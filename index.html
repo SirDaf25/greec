@@ -7,7 +7,6 @@
     <meta name="keywords" content="Ορθοδοξία, προσευχή, εκκλησία, κηρύγματα, ιερέας, πνευματική ζωή">
     <meta property="og:title" content="Πνευματικός Λόγος | Επίσημη Ιστοσελίδα">
     <meta property="og:description" content="Ορθόδοξα κηρύγματα και προσευχές.">
-    <meta property="og:url" content="https://ваш-ник.github.io/название-репозитория/">
     
     <title>Πνευματικός Λόγος | Ορθόδοξη Πίστη</title>
     
@@ -15,8 +14,8 @@
     
     <style>
         :root {
-            --primary-color: #0b3d91; /* Глубокий синий */
-            --accent-color: #d4af37;  /* Золотой */
+            --primary-color: #0b3d91;
+            --accent-color: #d4af37;
             --bg-color: #fcfcfc;
             --text-color: #333333;
         }
@@ -70,7 +69,6 @@
             color: var(--accent-color);
         }
 
-        /* Hero Section */
         .hero {
             display: flex;
             align-items: center;
@@ -80,7 +78,7 @@
         }
 
         .hero-content {
-            max-width: 50%;
+            max-width: 55%;
         }
 
         .hero h1 {
@@ -96,27 +94,27 @@
 
         .btn {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 12px 28px;
             background-color: var(--primary-color);
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
+            transition: transform 0.2s, background 0.3s;
         }
 
         .btn:hover {
             background-color: #082d6b;
+            transform: translateY(-2px);
         }
 
         .hero-image img {
             width: 100%;
-            max-width: 450px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
 
-        /* Section styles */
         section {
             padding: 5rem 5%;
         }
@@ -125,7 +123,6 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            position: relative;
         }
 
         .section-title::after {
@@ -137,23 +134,22 @@
             margin: 15px auto 0;
         }
 
-        /* Videos Section */
         .video-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
         }
 
         .video-card {
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.07);
         }
 
         .video-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             height: 0;
         }
 
@@ -166,22 +162,31 @@
             border: 0;
         }
 
+        .video-info {
+            padding: 1.5rem;
+        }
+
+        .video-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
         .youtube-banner {
             text-align: center;
-            margin-top: 3rem;
-            padding: 2rem;
-            background-color: #ffeaea;
-            border-radius: 8px;
+            margin-top: 4rem;
+            padding: 3rem;
+            background-color: #fefefe;
+            border: 1px solid #eee;
+            border-radius: 12px;
         }
 
         .youtube-banner a {
             color: #ff0000;
             font-weight: bold;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
-        /* Prayers Section */
         .prayers-bg {
             background-color: var(--primary-color);
             color: white;
@@ -198,41 +203,45 @@
         }
 
         .prayer-card {
-            background: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--accent-color);
+            background: rgba(255,255,255,0.08);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border-top: 3px solid var(--accent-color);
         }
 
         .prayer-card h3 {
             color: var(--accent-color);
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
         }
 
         .prayer-card p {
             font-style: italic;
             font-family: 'Lora', serif;
+            font-size: 1.1rem;
         }
 
         footer {
             text-align: center;
-            padding: 2rem;
-            background-color: #111;
-            color: #aaa;
+            padding: 3rem;
+            background-color: #1a1a1a;
+            color: #888;
         }
 
-        /* Адаптивность */
         @media (max-width: 768px) {
             .hero {
                 flex-direction: column;
                 text-align: center;
+                padding-top: 3rem;
             }
             .hero-content {
                 max-width: 100%;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
             }
             nav {
-                display: none; /* Для простоты на мобильном скрыто, можно добавить бургер-меню */
+                display: none;
             }
         }
     </style>
@@ -251,8 +260,8 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Καλώς ήλθατε</h1>
-            <p>Ο λόγος του Θεού, προσευχές και πνευματική καθοδήγηση μέσα από το διαδίκτυο. Εγγραφείτε στο κανάλι μας για να λαμβάνετε νέα βίντεο και πνευματικά μηνύματα.</p>
-            <a href="#videos" class="btn">Δείτε τα βίντεο</a>
+            <p>Ψηφιακός χώρος για πνευματική καθοδήγηση, ορθόδοξα κηρύγματα και κοινή προσευχή. Ακολουθήστε μας στο ταξίδι της πίστης.</p>
+            <a href="#videos" class="btn">Δείτε τα τελευταία βίντεο</a>
         </div>
         <div class="hero-image">
             <img src="priest.png" alt="Ιερέας">
@@ -260,46 +269,57 @@
     </section>
 
     <section id="videos">
-        <h2 class="section-title">Κηρύγματα & Βίντεο</h2>
+        <h2 class="section-title">Πρόσφατα Κηρύγματα</h2>
         
         <div class="video-container">
             <div class="video-card">
                 <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/Z4lIiVMGhms" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Πνευματική Ομιλία 1</h3>
                 </div>
             </div>
+            
             <div class="video-card">
                 <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/52fZVXIE-Ww" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Πνευματική Ομιλία 2</h3>
                 </div>
             </div>
         </div>
 
         <div class="youtube-banner">
-            <p>Δείτε περισσότερα βίντεο και εγγραφείτε στο κανάλι μας:</p>
+            <p>Για να μη χάνετε καμία νέα ομιλία, εγγραφείτε στο κανάλι μας:</p>
             <br>
             <a href="https://www.youtube.com/channel/UCIU8Ne3E2e2WrmUShVZz1CQ" target="_blank">
-                ▶ YouTube Channel
+                ▶ YouTube Channel: Πνευματικός Λόγος
             </a>
         </div>
     </section>
 
     <section id="prayers" class="prayers-bg">
-        <h2 class="section-title">Καθημερινές Προσευχές</h2>
+        <h2 class="section-title">Προσευχητάριο</h2>
         <div class="prayers-container">
             <div class="prayer-card">
-                <h3>Προσευχή Κυριακή (Πάτερ ημών)</h3>
+                <h3>Η Κυριακή Προσευχή</h3>
                 <p>Πάτερ ημών ο εν τοις ουρανοίς, αγιασθήτω το όνομά σου, ελθέτω η βασιλεία σου, γενηθήτω το θέλημά σου, ως εν ουρανώ και επί της γης...</p>
             </div>
             <div class="prayer-card">
-                <h3>Ευχή του Ιησού</h3>
+                <h3>Η Ευχή της Καρδιάς</h3>
                 <p>Κύριε Ιησού Χριστέ, Υιέ του Θεού, ελέησόν με τον αμαρτωλόν.</p>
+            </div>
+            <div class="prayer-card">
+                <h3>Προσευχή Φύλακα Αγγέλου</h3>
+                <p>Άγιε Άγγελε, ο εφεστώς της αθλίας μου ψυχής και ταλαιπώρου μου ζωής, μη εγκαταλίπης με τον αμαρτωλόν...</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Πνευματικός Λόγος. All rights reserved.</p>
+        <p>&copy; 2026 Πνευματικός Λόγος | Δημιουργήθηκε για την ορθόδοξη κοινότητα</p>
     </footer>
 
 </body>
